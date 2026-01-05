@@ -28,7 +28,8 @@
       color: #fff;
     }
 
-    .top {
+    /* HEADER */
+    .header {
       text-align: center;
       padding: 25px 15px 10px;
     }
@@ -36,30 +37,31 @@
     .title {
       font-size: 34px;
       font-weight: 700;
-      margin-bottom: 18px;
+      margin-bottom: 16px;
     }
 
-    /* 🔥 DONATION BUTTON */
-    .donate-call {
+    /* DONATE BUTTON (single animation, no overlap) */
+    .donate {
+      margin: 20px 0;
+      text-align: center;
+    }
+
+    .donate a {
       font-size: 22px;
       font-weight: 800;
-      margin: 18px 0;
-      animation: pulse 1.2s infinite;
-    }
-
-    .donate-call a {
       color: red;
       text-decoration: none;
       border: 2px solid red;
-      padding: 12px 26px;
+      padding: 12px 28px;
       border-radius: 999px;
       display: inline-block;
+      animation: pulse 1.4s infinite;
     }
 
-    .arrow {
+    .donate span {
       margin-left: 8px;
-      animation: arrowBlink 1s infinite;
       display: inline-block;
+      animation: arrowBlink 1s infinite;
     }
 
     @keyframes pulse {
@@ -74,54 +76,55 @@
       100% { transform: translateX(0); }
     }
 
-    .image-wrapper {
+    /* IMAGE */
+    .image-container {
       max-width: 720px;
       margin: 0 auto;
     }
 
-    .image-wrapper img {
+    .image-container img {
       width: 100%;
       height: auto;
       display: block;
-      cursor: pointer;
     }
 
-    .bottom {
+    /* FOOTER DONATE */
+    .footer {
       text-align: center;
-      padding: 25px 15px 40px;
+      padding: 30px 15px 40px;
     }
   </style>
 </head>
 
 <body>
 
-  <!-- TOP SECTION -->
-  <div class="top">
+  <!-- TOP -->
+  <div class="header">
     <div class="title">
       Help Me Bring My Family Back Together
     </div>
 
-    <div class="donate-call">
+    <div class="donate">
       <a href="https://gofund.me/3752273aa" target="_blank">
         DONATE & SEE MORE DETAILS
-        <span class="arrow">➤➤➤</span>
+        <span>➤➤➤</span>
       </a>
     </div>
   </div>
 
-  <!-- IMAGE (CLICKABLE) -->
-  <div class="image-wrapper">
+  <!-- IMAGE (CLICKABLE, NOTHING OVER IT) -->
+  <div class="image-container">
     <a href="https://gofund.me/3752273aa" target="_blank">
       <img src="pp.png" alt="My Story Image">
     </a>
   </div>
 
-  <!-- BOTTOM DONATION -->
-  <div class="bottom">
-    <div class="donate-call">
+  <!-- BOTTOM -->
+  <div class="footer">
+    <div class="donate">
       <a href="https://gofund.me/3752273aa" target="_blank">
         DONATE & SEE MORE DETAILS
-        <span class="arrow">➤➤➤</span>
+        <span>➤➤➤</span>
       </a>
     </div>
   </div>
