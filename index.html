@@ -1,105 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-‏<!DOCTYPE html>
-‏<html lang="en">
-‏<head>
-‏  <meta charset="UTF-8">
-‏  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-‏
-‏  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-‏
-‏  <style>
-‏    body {
-‏      margin: 0;
-‏      font-family: 'Inter', system-ui, sans-serif;
-‏      background: #000;
-‏      color: #fff;
-‏    }
-‏
-‏    .header {
-‏      text-align: center;
-‏      padding: 25px 15px 10px;
-‏    }
-‏
-‏    .donate {
-‏      margin: 20px 0;
-‏      text-align: center;
-‏    }
-‏
-‏    .donate a {
-‏      font-size: 22px;
-‏      font-weight: 800;
-‏      color: red;
-‏      text-decoration: none;
-‏      border: 2px solid red;
-‏      padding: 12px 28px;
-‏      border-radius: 999px;
-‏      display: inline-block;
-‏      animation: pulse 1.4s infinite;
-‏    }
-‏
-‏    .donate span {
-‏      margin-left: 8px;
-‏      display: inline-block;
-‏      animation: arrowBlink 1s infinite;
-‏    }
-‏
-‏    @keyframes pulse {
-‏      0% { opacity: 1; }
-‏      50% { opacity: 0.35; }
-‏      100% { opacity: 1; }
-‏    }
-‏
-‏    @keyframes arrowBlink {
-‏      0% { transform: translateX(0); }
-‏      50% { transform: translateX(6px); }
-‏      100% { transform: translateX(0); }
-‏    }
-‏
-‏    .image-container {
-‏      max-width: 720px;
-‏      margin: 0 auto;
-‏    }
-‏
-‏    .image-container img {
-‏      width: 100%;
-‏      height: auto;
-‏      display: block;
-‏      cursor: pointer;
-‏    }
-‏
-‏    .footer {
-‏      text-align: center;
-‏      padding: 30px 15px 40px;
-‏    }
-‏  </style>
-‏</head>
-‏
-‏<body>
-‏
-‏  <div class="header">
-‏    <div class="donate">
-‏      <a href="https://gofund.me/3752273aa" target="_blank">
-‏        DONATE & SEE MORE DETAILS
-‏        <span>➤➤➤</span>
-‏      </a>
-‏    </div>
-‏  </div>
-‏
-‏  <div class="image-container">
-‏    <a href="https://gofund.me/3752273aa" target="_blank">
-‏      <img src="pp.png" alt="">
-‏    </a>
-‏  </div>
-‏
-‏  <div class="footer">
-‏    <div class="donate">
-‏      <a href="https://gofund.me/3752273aa" target="_blank">
-‏        DONATE & SEE MORE DETAILS
-‏        <span>➤➤➤</span>
-‏      </a>
-‏    </div>
-‏  </div>
-‏
-‏</body>
-‏</html>
-‏
+  <!-- TITLE (appears in preview) -->
+  <title>Please don’t scroll — a parent asking help for his children. Is anyone there?</title>
+
+  <!-- Open Graph (Substack / Facebook / WhatsApp) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Please don’t scroll — a parent asking help for his children. Is anyone there?">
+  <meta property="og:image" content="https://i.ibb.co/6cFthCry/xw-LMy-Li-Tg-GMq-Tfw7-K8-Xg.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Please don’t scroll — a parent asking help for his children. Is anyone there?">
+  <meta name="twitter:image" content="https://i.ibb.co/6cFthCry/xw-LMy-Li-Tg-GMq-Tfw7-K8-Xg.jpg">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', system-ui, sans-serif;
+      background: #000;
+      color: #fff;
+    }
+
+    .header {
+      text-align: center;
+      padding: 25px 15px 10px;
+    }
+
+    .donate {
+      margin: 20px 0;
+      text-align: center;
+    }
+
+    .donate a {
+      font-size: 22px;
+      font-weight: 800;
+      color: red;
+      text-decoration: none;
+      border: 2px solid red;
+      padding: 12px 28px;
+      border-radius: 999px;
+      display: inline-block;
+      animation: pulse 1.4s infinite;
+    }
+
+    .donate span {
+      margin-left: 8px;
+      display: inline-block;
+      animation: arrowBlink 1s infinite;
+    }
+
+    @keyframes pulse {
+      0% { opacity: 1; }
+      50% { opacity: 0.35; }
+      100% { opacity: 1; }
+    }
+
+    @keyframes arrowBlink {
+      0% { transform: translateX(0); }
+      50% { transform: translateX(6px); }
+      100% { transform: translateX(0); }
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .container img,
+    .container video {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin-top: 15px;
+    }
+
+    .video-title {
+      text-align: center;
+      font-size: 18px;
+      font-weight: 600;
+      padding: 20px 15px 5px;
+      color: #fff;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 30px 15px 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- TOP DONATE -->
+  <div class="header">
+    <div class="donate">
+      <a href="http://spot.fund/hghd9pnsc" target="_blank">
+        DONATE & SEE MORE DETAILS
+        <span>➤➤➤</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- IMAGE -->
+  <div class="container">
+    <a href="http://spot.fund/hghd9pnsc" target="_blank">
+      <img src="pp.png" alt="">
+    </a>
+
+    <!-- TEXT ABOVE VIDEO -->
+    <div class="video-title">
+      This is a father asking for help for his children — please listen
+    </div>
+
+    <!-- VIDEO -->
+    <video controls>
+      <source src="clod.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- BOTTOM DONATE -->
+  <div class="footer">
+    <div class="donate">
+      <a href="http://spot.fund/hghd9pnsc" target="_blank">
+        DONATE & SEE MORE DETAILS
+        <span>➤➤➤</span>
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
